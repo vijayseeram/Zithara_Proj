@@ -16,7 +16,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/customers'); // Updated URL
+      const response = await axios.get('http://localhost:3000/customers'); 
       //console.log(response.data);
       setData(response.data);
     } catch (error) {
