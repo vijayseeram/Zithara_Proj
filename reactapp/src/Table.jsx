@@ -53,7 +53,6 @@ function Table({ data, searchTerm, sortBy }) {
         </tbody>
       </table>
       
-      {/* Pagination */}
       <ul className="pagination">
         {Array.from({ length: Math.ceil(filteredData.length / recordsPerPage) }, (_, i) => (
           <li key={i} className={`page-item ${i + 1 === currentPage ? 'active' : ''}`}>
